@@ -1,0 +1,25 @@
+---
+title: STUDIOPILATESLEMANS - LE STUDIO
+---
+
+  <div class="outer-container" style="margin-top:3.5em;">
+
+<div class="row-wrapper-studio">
+<div class="outer-container-studio">
+<section id="studio">
+  <h5>Le studio pilates</h5>
+<div id="mygallery2">
+  <% Dir.foreach("source/images/studio/") do |foto| %>
+  <% next if foto == '.' or foto == '..' %>
+ <a href="images/studio/<%= foto %>"  title="<%= foto.chomp('.jpg') %>">
+
+    <%= image_tag("studio/#{foto}", { alt: '#{foto}'}) %>
+
+  </a>
+
+<% end %>
+</section>
+</div>
+</div>
+
+</div>
