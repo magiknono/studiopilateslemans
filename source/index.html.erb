@@ -169,7 +169,7 @@ title: STUDIOPILATESLEMANS - 1er Studio de Pilates au Mans
   <% next if foto == '.' or foto == '..' %>
  <a href="images/photos/<%= foto %>"  title="<%= foto.chomp('.jpg') %>">
 
-    <%= image_tag("photos/#{foto}", { alt: '#{foto}'}) %>
+    <%= image_tag("photos/#{foto}", { alt: "#{foto.chomp('.jpg')}"}) %>
 
   </a>
 
