@@ -14,7 +14,7 @@ description: Découvrez le studio pilates du mans
   <% next if foto == '.' or foto == '..' %>
  <a href="images/studio/<%= foto %>"  title="<%= foto.chomp('.jpg') %>">
 
-    <%= image_tag("studio/#{foto}", { alt: '#{foto}'}) %>
+    <%= image_tag("studio/#{foto}", { alt: "#{foto.chomp('.jpg')}"}) %>
 
   </a>
 
