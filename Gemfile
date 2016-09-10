@@ -32,3 +32,4 @@ gem 'puma', "~> 2.11.2"
 #gem 'middleman-google-analytics', "~> 1.1.0"
 
 gem "middleman-minify-html"
+gem 'middleman-search_engine_sitemap'
